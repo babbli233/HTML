@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>HTML/CSS Hello Anusha </title>
+<meta Name="Anusha" Content="Assignment 1">
+<style>
+header{
+    text-align: center;
+    color:hotpink;
+}
+body{
+    background: beige;
+}
+h3{
+	color:magenta;
+}
+.feature{
+	float: right;
+	width: 120px;
+	height: 120px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+th, td {
+    padding: 5px;
+}
+
+p{
+	font-style: italic;
+	color:red;
+}
+.table1
+{
+	color:blue;
+    text-align: left;
+}
+
+.table2
+{
+	color:green;
+	text-align: left;
+	width:50%;
+}
+ul li {
+	padding-left: 20px;
+	margin-left: 15px;
+	margin-bottom: 10;
+	list-style: none;
+	background-image: url(s2.png);
+	background-repeat: no-repeat;
+	background-position:0 3px; 
+}
+a:link {
+color: red;
+}
+a:visited {
+color: purple;
+}
+a:hover {
+color: black;
+}
+#myCanvas{
+  width:200px;
+  height:100px ;
+  border:1px;
+  border-color:brown; 
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<canvas id="myCanvas">My Canvas</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"hotpink");
+grd.addColorStop(1,"black");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,180,80);
+</script>
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="22" font-family="Verdana"
+  x="42" y="80">My Resume</text>
+Sorry, your browser does not support inline SVG.
+</svg>
+</header>
+
+<h3><u>ABOUT ME</u></h3>
+<div>
+<img class = "feature" src = "http://www.engr.iupui.edu/sites/careerservices/studentsalumni/_images/resume.jpg">
+<p>Competent &amp highly talented Software Developer offering over 3 years of commendable experience in Software Development.Experience in full SDLC starting from collecting Business specifications, Analysis, Design, Development, Implementation, Deployment, Testing, Support and Documenting the entire life cycle using various methodologies. Involved in projects using Waterfall and Extreme Programming methodologies.</p>
+<p>
+Exceptional analytical, troubleshooting organizational, communication, prioritization, problem solving and leadership skills with ability to 
+create and sustain high work tempo.Successful track record in spearheading, developing, implementing various projects within agreed cost/timelines without incidences of overruns.
+</p>
+</div>
+
+<div class = "table1">
+<p>
+  	<b><center>My Technologies</center></b>
+</p>
+
+<table style ="width:100%">
+    <th>Database</th>
+    <th>Scripting</th>		
+    <th>OS</th>
+  </tr>
+  <tr>
+    <td>Teradata</td>
+    <td>Python</td>		
+    <td>MS Office</td>
+  </tr>
+  <tr>
+    <td>SQL</td>
+    <td>PHP</td>		
+    <td>MAC OS</td>
+  </tr>
+  <tr>
+    <td>DB2</td>
+    <td>HTML</td>		
+    <td>MVS</td>
+  </tr>
+</table>
+</div>
+
+<div class = "table2">
+
+ <h4>My Education</h4>
+<table style ="width:100%">
+    <tr>
+    <th>Masters</th>
+        <td>Software Engineering</td>
+    </tr>    
+    <tr>
+    <th>Bachelors</th>
+        <td>Biotechnology</td>		
+     </tr>
+  
+</table>
+</div>
+
+<div>
+<h3>MY PAGES</h3>
+<ul>
+	<li><a href="https://www.facebook.com/" target="_blank">MY FACEBOOK</a></li>
+	<li><a href="https://www.linkedin.com/" target="_blank">MY LINKDEIN</a></li>
+	<li><a href="https://www.google.com/" target="_blank">MY WEBSITE</a></li>
+</ul>
+</div>
+
+<div>
+<h3>MY VIDEOS</h3>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/9gTw2EDkaDQ" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="400" height="300" src="https://www.youtube.com/embed/YcApt9RgiT0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="400" height="300" src="https://www.youtube.com/embed/CGSdK7FI9MY" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<footer>
+<h5>
+    &copy;Anusha Kurapati &nbsp 
+    <time datetime="2016-04-25"> APRIL 25th </time>
+</h5>
+</footer>
+</body>
+</html>
+

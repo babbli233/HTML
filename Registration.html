@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>Registration</title>
+<meta Name="Anusha" Content="Lab 13">
+    <style>
+        header
+	{
+	    text-align:center;
+            font-family: fantasy;
+            color: navy;
+            text-decoration: underline;
+	}
+        body{
+            background: beige;
+        }
+        table{
+            background: pink;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Registration Form
+        </h1>
+    </header>
+    <section>
+        <table align = "center">
+            <th>
+            <td>
+            <form action="file:///Users/Anusha/Desktop/UI/HTML/Hello%20Anusha.html" method="post">
+		<fieldset>
+		    <label for="name">First Name:</label>
+                        <input type="text" name="First Name" id="Fname"><br><br>
+                    <label for="name">Last Name:</label>
+                        <input type="text" name="Last Name" id="Lname"><br><br>
+                    Gender:
+                        <input type="radio" name="Gender" id="radio1" value="Male">Male
+                        <input type="radio" name="Gender" id="radio2" value="Female">Female<br><br>
+                    <label for="age"> Age:</label>
+			<input type="text" name="My Age" id="myage" list="age"><br><br>
+			    <datalist id="age">
+				<option value="<18">
+				<option value="18-25">
+				<option value="25-35">
+				<option value="35-45">
+				<option value=">45">
+			    </datalist>
+                    <label for="Email">Email:</label>
+                        <input type="email" name="Email" id="Email"><br><br>
+        	    <label for="Tel">Phone:</label>
+			<input type="tel" name="Phone" id="Tel"><br><br>
+		    <label for="Link">Website:</label>
+			<input type="url" name="Link" id="Link"><br><br>
+		    <label for="date">Date:</label>
+			<input type="date" name="Date" id="Date"><br><br>
+                    <label for="Color">Favorite Color:</label>
+			<input type="color" name="Color" id="Color"><br><br>
+		    
+		    Address:<br>
+                        <textarea name="address" rows="3" cols="30"></textarea><br><br>
+                    <label for="mycountry"> Country:</label>
+			<input type="text" name="mycountry" id="mycountry" list="country"><br><br>
+			    <datalist id="country">
+				<option value="India">
+				<option value="Sri Lanka">
+				<option value="Chaina">
+				<option value="Japan">
+				<option value="France">
+				<option value="Europe">
+				<option value="Brazil">
+				<option value="U.S.A">
+			    </datalist>
+
+		    Comments:<br>
+                        <textarea name="comments" rows="5" cols="30"></textarea><br><br>		
+		    <input type="submit" name="SubmitButton" value="Submit">  
+                    <input type="reset" name="ResetButton" value="Reset">
+		</fieldset>
+        </table>
+     </section>
+	
+
+</body>
+</html>

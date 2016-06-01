@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Login</title>
+
+<style>
+    header
+    {
+        text-align:center;
+        font-family: fantasy;
+        color: navy;
+        text-decoration: underline;
+    }
+    body{
+        background: beige;
+    }
+    table{
+        background: pink;
+        width:400px;
+    }
+</style>
+
+</head>
+
+<body>
+<header>
+    <h1>Login Form</h1>
+</header>
+
+<form name = "loginform" action="https://www.google.com/" method = "post">
+    USER NAME <input type= "text" name="usename">
+    </br>
+    </br>
+    PASSWORD <input type="password" name="pword">
+    </br>
+    <input type="button" value="Submit" onclick="return validate()">
+    <input type="reset" value="Reset">
+</form>
+
+<script type="text/javascript">
+    function validate()
+    {
+    var x = document.forms["loginform"]["usename"].value;
+    var y = document.forms["loginform"]["pword"].value;
+    if (x == null || x == "") 
+    {
+        alert("Name must be filled out");
+        return false;
+    }
+    if(y == null || y == "")
+    {
+        alert("Password must be filled out");
+        return false;
+    }
+    }
+    
+</script>
+
+</body>
+</html>
